@@ -1,0 +1,54 @@
+From 54a194cad45edfa47cd8faa2fea5884e51aa8afd Mon Sep 17 00:00:00 2001
+From: Weidong Wang <wangweidong.a@awinic.com>
+Date: Tue, 20 Sep 2022 15:55:22 +0800
+Subject: [PATCH 0/2] AW883xx audio driver
+
+*** BLURB HERE ***
+
+Weidong Wang (2):
+  ASoc:codes:Add Awinic AW883XX audio amplifier driver     The Awinic
+    AW883XX is an I2S/TDM input, high efficiency     digital Smart K
+    audio amplifier with an integrated 10.25V     smart boost convert
+  add awinic,aw883xx.yaml
+
+ .../devicetree/bindings/sound/awinic,aw883xx.yaml  |   60 +
+ sound/soc/codecs/Kconfig                           |   10 +
+ sound/soc/codecs/Makefile                          |    4 +
+ sound/soc/codecs/aw883xx/aw883xx.c                 | 2734 ++++++++++++++++++++
+ sound/soc/codecs/aw883xx/aw883xx.h                 |  213 ++
+ sound/soc/codecs/aw883xx/aw883xx_bin_parse.c       | 1392 ++++++++++
+ sound/soc/codecs/aw883xx/aw883xx_bin_parse.h       |  145 ++
+ sound/soc/codecs/aw883xx/aw883xx_calib.c           | 2534 ++++++++++++++++++
+ sound/soc/codecs/aw883xx/aw883xx_calib.h           |  154 ++
+ sound/soc/codecs/aw883xx/aw883xx_data_type.h       |  157 ++
+ sound/soc/codecs/aw883xx/aw883xx_device.c          | 1734 +++++++++++++
+ sound/soc/codecs/aw883xx/aw883xx_device.h          |  557 ++++
+ sound/soc/codecs/aw883xx/aw883xx_init.c            |  649 +++++
+ sound/soc/codecs/aw883xx/aw883xx_log.h             |   32 +
+ sound/soc/codecs/aw883xx/aw883xx_monitor.c         | 1197 +++++++++
+ sound/soc/codecs/aw883xx/aw883xx_monitor.h         |  167 ++
+ sound/soc/codecs/aw883xx/aw883xx_pid_2049_reg.h    | 2388 +++++++++++++++++
+ sound/soc/codecs/aw883xx/aw883xx_spin.c            |  807 ++++++
+ sound/soc/codecs/aw883xx/aw883xx_spin.h            |   80 +
+ 19 files changed, 15014 insertions(+)
+ create mode 100644 Documentation/devicetree/bindings/sound/awinic,aw883xx.yaml
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx.c
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx.h
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_bin_parse.c
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_bin_parse.h
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_calib.c
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_calib.h
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_data_type.h
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_device.c
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_device.h
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_init.c
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_log.h
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_monitor.c
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_monitor.h
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_pid_2049_reg.h
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_spin.c
+ create mode 100644 sound/soc/codecs/aw883xx/aw883xx_spin.h
+
+-- 
+2.7.4
+
